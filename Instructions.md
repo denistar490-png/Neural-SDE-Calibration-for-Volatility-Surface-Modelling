@@ -8,10 +8,10 @@ Open this folder as the project and select Python 3.12 or 3.13. In its terminal:
 
 ```sh
 python -m pip install -r requirements.txt
-python run.py reproduce --profile smoke --device cpu
+
 ```
 
-The smoke profile uses small samples and two training iterations per maturity. It verifies execution; its estimates are not thesis-quality results. Use a new `--output` directory to repeat a run.
+
 
 | Command | Purpose |
 | --- | --- |
