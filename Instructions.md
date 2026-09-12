@@ -1,6 +1,6 @@
-# Simplified thesis code
+# Thesis code
 
-This folder runs independently of the original repository. It preserves the thesis's numerical models, training settings, seeds and validation-based checkpoint selection, with only the outputs used for thesis results and figures.
+
 
 ## Run locally (including PyCharm)
 
@@ -55,4 +55,4 @@ Independent per-slice evaluation uses the accepted stage precisions and seed fam
 
 The new CPU smoke runs matched the working package's prices and trained checkpoint tensors. Full Local Volatility reruns at 200,000 and 100,000 paths matched accepted prices within 6e-14; nine Fourier spot checks agreed within 2e-15 in variance. Development comparisons are kept outside this folder. 
 
-Generated results belong in `results/` (or an explicit output directory). Exclude generated outputs, caches and virtual environments if you submit this folder again after running it.
+Generated results belong in `results/` (or an explicit output directory).
