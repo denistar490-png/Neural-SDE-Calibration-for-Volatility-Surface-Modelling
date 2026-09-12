@@ -1,0 +1,7 @@
+# Install numerical dependencies. Colab already provides a CUDA-enabled torch;
+# do not replace it with a CPU wheel. Tested local versions are recorded separately.
+numpy>=2.1,<3
+pandas>=2.2,<3
+scipy>=1.14,<2
+matplotlib>=3.9,<4
+torch>=2.6,<3

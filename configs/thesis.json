@@ -1,0 +1,349 @@
+{
+  "profile": "thesis",
+  "training_slices": [
+    {
+      "maturity_index": 1,
+      "dtype": "float32",
+      "training_seed_base": 20410000,
+      "validation_seeds": [
+        20510001
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          32768
+        ],
+        [
+          500,
+          1499,
+          65536
+        ],
+        [
+          1500,
+          2999,
+          98304
+        ]
+      ],
+      "hedge_volatility_mode": "running_vol",
+      "numerical_mode": "legacy",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    },
+    {
+      "maturity_index": 2,
+      "dtype": "float32",
+      "training_seed_base": 20420000,
+      "validation_seeds": [
+        20520001,
+        20520002,
+        20520003
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          32768
+        ],
+        [
+          500,
+          1499,
+          65536
+        ],
+        [
+          1500,
+          2999,
+          98304
+        ]
+      ],
+      "hedge_volatility_mode": "running_vol",
+      "numerical_mode": "legacy",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    },
+    {
+      "maturity_index": 3,
+      "dtype": "float32",
+      "training_seed_base": 20430000,
+      "validation_seeds": [
+        20530001,
+        20530002,
+        20530003
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          32768
+        ],
+        [
+          500,
+          1499,
+          65536
+        ],
+        [
+          1500,
+          2999,
+          98304
+        ]
+      ],
+      "hedge_volatility_mode": "running_vol",
+      "numerical_mode": "legacy",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    },
+    {
+      "maturity_index": 4,
+      "dtype": "float32",
+      "training_seed_base": 20440000,
+      "validation_seeds": [
+        20540001,
+        20540002,
+        20540003
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          32768
+        ],
+        [
+          500,
+          1499,
+          65536
+        ],
+        [
+          1500,
+          2999,
+          98304
+        ]
+      ],
+      "hedge_volatility_mode": "running_vol",
+      "numerical_mode": "legacy",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    },
+    {
+      "maturity_index": 5,
+      "dtype": "float32",
+      "training_seed_base": 20450000,
+      "validation_seeds": [
+        20550001,
+        20550002,
+        20550003
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          32768
+        ],
+        [
+          500,
+          1499,
+          65536
+        ],
+        [
+          1500,
+          2999,
+          98304
+        ]
+      ],
+      "hedge_volatility_mode": "running_vol",
+      "numerical_mode": "legacy",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    },
+    {
+      "maturity_index": 6,
+      "dtype": "float32",
+      "training_seed_base": 20460000,
+      "validation_seeds": [
+        20560001,
+        20560002,
+        20560003
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          32768
+        ],
+        [
+          500,
+          1499,
+          65536
+        ],
+        [
+          1500,
+          2999,
+          98304
+        ]
+      ],
+      "hedge_volatility_mode": "running_vol",
+      "numerical_mode": "legacy",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    },
+    {
+      "maturity_index": 7,
+      "dtype": "float64",
+      "training_seed_base": 50780000,
+      "validation_seeds": [
+        51780000,
+        51780001,
+        51780002
+      ],
+      "validation_paths_per_seed": 98304,
+      "path_schedule": [
+        [
+          0,
+          499,
+          16384
+        ],
+        [
+          500,
+          1499,
+          32768
+        ],
+        [
+          1500,
+          2999,
+          49152
+        ]
+      ],
+      "hedge_volatility_mode": "alpha_only",
+      "numerical_mode": "log_state_robust",
+      "learning_rate": 0.001,
+      "maximum_iterations": 3000,
+      "validation_interval": 250,
+      "steps_per_day": 1
+    }
+  ],
+  "evaluation": {
+    "paths": 491520,
+    "batch_paths": 98304,
+    "seeds": [
+      78010000,
+      78010001,
+      78010002,
+      78010003,
+      78010004
+    ]
+  },
+  "convergence": {
+    "paths": 294912,
+    "batch_paths": 98304,
+    "seeds": [
+      78020000,
+      78020001,
+      78020002
+    ]
+  },
+  "local_volatility_runs": [
+    {
+      "run_label": "primary_4spd",
+      "paths": 200000,
+      "steps_per_day": 4,
+      "antithetic": true,
+      "seed": 20260817
+    },
+    {
+      "run_label": "convergence_8spd",
+      "paths": 100000,
+      "steps_per_day": 8,
+      "antithetic": true,
+      "seed": 20260818
+    }
+  ],
+  "slice_evaluation": [
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        20610001,
+        20610002,
+        20610003,
+        20610004,
+        20610005
+      ]
+    },
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        20620001,
+        20620002,
+        20620003,
+        20620004,
+        20620005
+      ]
+    },
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        20630001,
+        20630002,
+        20630003,
+        20630004,
+        20630005
+      ]
+    },
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        20640001,
+        20640002,
+        20640003,
+        20640004,
+        20640005
+      ]
+    },
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        20650001,
+        20650002,
+        20650003,
+        20650004,
+        20650005
+      ]
+    },
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        20660001,
+        20660002,
+        20660003,
+        20660004,
+        20660005
+      ]
+    },
+    {
+      "batch_paths": 98304,
+      "seeds": [
+        53780000,
+        53780001,
+        53780002,
+        53780003,
+        53780004
+      ]
+    }
+  ]
+}
